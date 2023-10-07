@@ -14,7 +14,7 @@ public class SpringBootJenkinApplication {
 	public void init(){
 		logger.info("Spring Boot Application started {}");
 		str="Happy Coding!";
-	logger.info(str.substring(1));
+	logger.info(str.substring(5));
 	}
 	public static void main(String[] args) {
 		logger.info("Spring Boot application executed {}");
