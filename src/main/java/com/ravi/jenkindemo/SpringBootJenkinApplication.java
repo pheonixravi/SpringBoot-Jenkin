@@ -8,10 +8,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class SpringBootJenkinApplication {
+	private String str;
 	public static Logger logger= LoggerFactory.getLogger(SpringBootJenkinApplication.class);
 @PostConstruct
 	public void init(){
 		logger.info("Spring Boot Application started {}");
+		str=null;
+	logger.info(str.substring(1));
 	}
 	public static void main(String[] args) {
 		logger.info("Spring Boot application executed {}");
