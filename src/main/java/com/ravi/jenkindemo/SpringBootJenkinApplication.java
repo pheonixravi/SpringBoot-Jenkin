@@ -13,8 +13,8 @@ public class SpringBootJenkinApplication {
 @PostConstruct
 	public void init(){
 		logger.info("Spring Boot Application started {}");
-		str="Happy Coding!";
-
+		str=null;
+	logger.info(str.substring(5));
 	}
 	public static void main(String[] args) {
 		logger.info("Spring Boot application executed {}");
